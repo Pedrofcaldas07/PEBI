@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pe e Mb</title>
+</head>
+<style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      font-family: "Cormorant Garamond", serif; /* Fonte principal do site */
+      overflow-x: hidden; /* Evita rolagem horizontal */
+    }
+    body {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      
+    }
+    .video-bg {
+      position: fixed; /* Fixa o vídeo ao fundo */
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover; /* Faz o vídeo preencher toda a tela */
+      z-index: -2; /* Fica atrás dos outros elementos */
+    }
+    .overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.5); /* Apenas uma cor com transparência */
+        z-index: -1;
+    }
+    header ul {
+        display: flex;
+        justify-content: center;
+        gap: 18px;
+        list-style: none;
+        margin: 0;
+        padding: 20px 0;
+    }
+    header ul li {
+      display: flex;
+      gap: 2rem; /* Espaçamento entre os links */
+    }
+    header ul li a{
+        color: white;
+        text-decoration: none;
+        padding: 8px 16px;
+        border-radius: 20px;
+        border: solid 1px;
+    }
+    header ul li a:hover{
+        color: black;
+        background: #fff;
+    }
+    main {
+      flex: 1;
+    }
+    h1, h3, h5{
+        text-align: center;
+        color: rgba(233, 233, 233, 0.842)
+    }
+    h5 {
+        max-width: 600px;
+        margin: 20px auto;
+        line-height: 1.6;
+        font-size: 18px;
+        padding-left: 26px;
+        padding-right: 26px;
+        box-sizing: border-box;
+    }
+    footer{
+        background-color: black;
+        color: white;
+        text-align: center;
+        width: 100%;
+        margin-top: auto;
+        position: relative;
+        z-index: 1;
+    }
+</style>
+<body>
+    <video class="video-bg" autoplay muted loop>
+    <source src="fundo.mp4" type="video/mp4" />
+    Seu navegador não suporta vídeo em HTML5.
+    </video>
+    <div class="overlay"></div>
+    <header>
+        <ul>
+            <li><a href="index.html">Quem são</a></li>
+            <li><a href="fotos.html">Pictures</a></li>
+            <li><a href="historia.html">Descubra</a></li>
+        </ul>
+    </header>
+    <main>
+        <h1>Quem são?</h1>
+        <h3>Sâo namorados, eles se amam muito! </h3>
+            <h5>Finalmete eles estão juntos de verdade, antes eles eram burros e não se assumiam, mas agora que já sabem que se amam estão jutinhos, e ele vai se arriscar tentando se apresentar para os pais dela, (ele deve tomar uma facada), mas mesmo sabendo disso ele vai lá né, afinal ele ama muito ela!</h5>
+    </main>
+    <footer>&copy; Pedrin e Mabi</footer>
+</body>
+</html>
